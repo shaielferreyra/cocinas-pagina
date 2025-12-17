@@ -189,7 +189,7 @@ const ProductDetail = () => {
         'Funcionamiento silencioso',
         'Frío y Calor',
         'Eficiencia energética',
-        'Garantía 6 meses'
+        
       ]
     },
     'aire-6000': {
