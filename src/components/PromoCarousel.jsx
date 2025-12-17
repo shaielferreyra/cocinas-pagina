@@ -90,20 +90,20 @@ const PromoCarousel = () => {
         key={value}
         initial={{ scale: 1.2, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        className="bg-dark-900/80 backdrop-blur-sm border border-primary-600/30 rounded-lg px-4 py-3 min-w-[70px]"
+        className="bg-dark-900/80 backdrop-blur-sm border border-primary-600/30 rounded-md sm:rounded-lg px-2 py-2 sm:px-3 sm:py-2.5 md:px-4 md:py-3 min-w-[50px] sm:min-w-[60px] md:min-w-[70px]"
       >
-        <span className="text-3xl md:text-4xl font-bold text-white font-display">
+        <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white font-display">
           {value.toString().padStart(2, '0')}
         </span>
       </motion.div>
-      <span className="text-xs md:text-sm text-gray-400 mt-2 uppercase tracking-wider">
+      <span className="text-[10px] sm:text-xs md:text-sm text-gray-400 mt-1 sm:mt-2 uppercase tracking-wider">
         {label}
       </span>
     </div>
   );
 
   return (
-    <div className="relative w-full h-[500px] md:h-[600px] overflow-hidden bg-dark-900 mt-20">
+    <div className="relative w-full h-[450px] sm:h-[500px] md:h-[550px] lg:h-[600px] overflow-hidden bg-dark-900 mt-16 sm:mt-20">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentSlide}
@@ -129,20 +129,20 @@ const PromoCarousel = () => {
           {/* Grid pattern overlay */}
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjAzIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-50"></div>
           
-          <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center">
+          <div className="relative h-full max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 flex flex-col items-center justify-center text-center">
             <motion.div
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="mb-8"
+              className="mb-4 sm:mb-6 md:mb-8"
             >
-              <h2 className="text-5xl md:text-7xl font-display font-black text-white mb-4 leading-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-black text-white mb-2 sm:mb-3 md:mb-4 leading-tight px-2">
                 {promos[currentSlide].title}
               </h2>
-              <p className="text-2xl md:text-4xl font-semibold text-primary-400 mb-6">
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-primary-400 mb-3 sm:mb-4 md:mb-6 px-2">
                 {promos[currentSlide].subtitle}
               </p>
-              <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl mx-auto px-4">
                 {promos[currentSlide].description}
               </p>
             </motion.div>
@@ -152,22 +152,22 @@ const PromoCarousel = () => {
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="mt-8"
+              className="mt-4 sm:mt-6 md:mt-8"
             >
-              <div className="flex items-center justify-center mb-6">
-                <Clock className="w-6 h-6 text-primary-500 mr-3" />
-                <span className="text-gray-300 font-medium uppercase tracking-wide">
+              <div className="flex items-center justify-center mb-3 sm:mb-4 md:mb-6 px-2">
+                <Clock className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary-500 mr-2 sm:mr-3" />
+                <span className="text-xs sm:text-sm md:text-base text-gray-300 font-medium uppercase tracking-wide">
                   La oferta termina en
                 </span>
               </div>
               
-              <div className="flex gap-3 md:gap-6">
+              <div className="flex gap-2 sm:gap-3 md:gap-4 lg:gap-6 items-center">
                 <TimeBox value={timeLeft.days} label="Días" />
-                <div className="text-3xl md:text-4xl text-primary-500 font-bold self-center mb-8">:</div>
+                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary-500 font-bold self-center -mb-6 sm:-mb-7 md:-mb-8">:</div>
                 <TimeBox value={timeLeft.hours} label="Horas" />
-                <div className="text-3xl md:text-4xl text-primary-500 font-bold self-center mb-8">:</div>
+                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary-500 font-bold self-center -mb-6 sm:-mb-7 md:-mb-8">:</div>
                 <TimeBox value={timeLeft.minutes} label="Min" />
-                <div className="text-3xl md:text-4xl text-primary-500 font-bold self-center mb-8">:</div>
+                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary-500 font-bold self-center -mb-6 sm:-mb-7 md:-mb-8">:</div>
                 <TimeBox value={timeLeft.seconds} label="Seg" />
               </div>
             </motion.div>
@@ -178,7 +178,7 @@ const PromoCarousel = () => {
               transition={{ delay: 0.6 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="mt-12 px-10 py-4 bg-white text-dark-900 font-bold text-lg rounded-lg hover:bg-gray-100 transition-all shadow-2xl shadow-primary-900/50"
+              className="mt-6 sm:mt-8 md:mt-10 lg:mt-12 px-6 py-2.5 sm:px-8 sm:py-3 md:px-10 md:py-4 bg-white text-dark-900 font-bold text-sm sm:text-base md:text-lg rounded-lg hover:bg-gray-100 transition-all shadow-2xl shadow-primary-900/50"
             >
               Ver Ofertas
             </motion.button>
@@ -189,28 +189,28 @@ const PromoCarousel = () => {
       {/* Navigation Buttons */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-dark-900/50 backdrop-blur-sm border border-primary-600/30 rounded-full text-white hover:bg-dark-800 transition-all z-10 group"
+        className="absolute left-2 sm:left-3 md:left-4 top-1/2 -translate-y-1/2 p-2 sm:p-2.5 md:p-3 bg-dark-900/50 backdrop-blur-sm border border-primary-600/30 rounded-full text-white hover:bg-dark-800 transition-all z-10 group"
       >
-        <ChevronLeft className="w-6 h-6 group-hover:-translate-x-1 transition-transform" />
+        <ChevronLeft className="w-5 h-5 sm:w-5 sm:h-5 md:w-6 md:h-6 group-hover:-translate-x-1 transition-transform" />
       </button>
       
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-dark-900/50 backdrop-blur-sm border border-primary-600/30 rounded-full text-white hover:bg-dark-800 transition-all z-10 group"
+        className="absolute right-2 sm:right-3 md:right-4 top-1/2 -translate-y-1/2 p-2 sm:p-2.5 md:p-3 bg-dark-900/50 backdrop-blur-sm border border-primary-600/30 rounded-full text-white hover:bg-dark-800 transition-all z-10 group"
       >
-        <ChevronRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+        <ChevronRight className="w-5 h-5 sm:w-5 sm:h-5 md:w-6 md:h-6 group-hover:translate-x-1 transition-transform" />
       </button>
 
       {/* Dots Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-10">
+      <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 flex gap-2 sm:gap-2.5 md:gap-3 z-10">
         {promos.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`h-2 rounded-full transition-all ${
+            className={`h-1.5 sm:h-2 rounded-full transition-all ${
               index === currentSlide 
-                ? 'w-12 bg-primary-600' 
-                : 'w-2 bg-gray-500 hover:bg-gray-400'
+                ? 'w-8 sm:w-10 md:w-12 bg-primary-600' 
+                : 'w-1.5 sm:w-2 bg-gray-500 hover:bg-gray-400'
             }`}
           />
         ))}
