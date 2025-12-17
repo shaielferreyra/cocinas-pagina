@@ -29,7 +29,7 @@ const ProductDetail = () => {
         { label: 'Hornallas', value: '4 Quemadores Enlozados' },
         { label: 'Pirómetro', value: 'Medidor de Temperatura' },
         { label: 'Tipo de Gas', value: 'Gas Envasado' },
-        { label: 'Garantía', value: '1 año' },
+        { label: 'Garantía', value: '6 meses' },
         { label: 'Instalación', value: 'Consultar' },
       ],
       features: [
@@ -59,7 +59,7 @@ const ProductDetail = () => {
         { label: 'Quemadores', value: 'Enlozados Alta Calidad' },
         { label: 'Tipo de Gas', value: 'Gas Envasado' },
         { label: 'Ideal para', value: 'Food Trucks' },
-        { label: 'Garantía', value: '1 año' },
+        { label: 'Garantía', value: '6 meses' },
         { label: 'Instalación', value: 'Consultar' },
       ],
       features: [
@@ -89,7 +89,7 @@ const ProductDetail = () => {
         { label: 'Rejas', value: 'Fundición de Aluminio' },
         { label: 'Pirómetro', value: 'Sí, integrado' },
         { label: 'Tipo de Gas', value: 'Gas Envasado' },
-        { label: 'Garantía', value: '1 año' },
+        { label: 'Garantía', value: '6 meses' },
         { label: 'Uso', value: 'Profesional' },
       ],
       features: [
@@ -119,7 +119,7 @@ const ProductDetail = () => {
         { label: 'Rejas', value: 'Fundición de Aluminio' },
         { label: 'Quemadores', value: 'Enlozados' },
         { label: 'Tipo de Gas', value: 'Gas Envasado' },
-        { label: 'Garantía', value: '1 año' },
+        { label: 'Garantía', value: '6 meses' },
         { label: 'Ideal para', value: 'Gastronomía' },
       ],
       features: [
@@ -150,7 +150,7 @@ const ProductDetail = () => {
         { label: 'Kit Instalación', value: 'Incluido' },
         { label: 'Cobertura', value: 'Hasta 30m²' },
         { label: 'Eficiencia', value: 'Clase A' },
-        { label: 'Garantía', value: '2 años' },
+        { label: 'Garantía', value: '6 meses' },
         { label: 'Instalación', value: 'Incluida' },
       ],
       features: [
@@ -180,7 +180,7 @@ const ProductDetail = () => {
         { label: 'Kit Instalación', value: 'Incluido' },
         { label: 'Cobertura', value: 'Hasta 45m²' },
         { label: 'Eficiencia', value: 'Clase A+' },
-        { label: 'Garantía', value: '2 años' },
+        { label: 'Garantía', value: '6 meses' },
         { label: 'Ruido', value: 'Bajo nivel' },
       ],
       features: [
@@ -189,7 +189,7 @@ const ProductDetail = () => {
         'Funcionamiento silencioso',
         'Frío y Calor',
         'Eficiencia energética',
-        'Garantía 2 años'
+        'Garantía 6 meses'
       ]
     },
     'aire-6000': {
@@ -210,7 +210,7 @@ const ProductDetail = () => {
         { label: 'Kit Instalación', value: 'Incluido' },
         { label: 'Cobertura', value: 'Hasta 60m²' },
         { label: 'Eficiencia', value: 'Clase A++' },
-        { label: 'Garantía', value: '2 años' },
+        { label: 'Garantía', value: '6 meses' },
         { label: 'Potencia', value: 'Alta' },
       ],
       features: [
