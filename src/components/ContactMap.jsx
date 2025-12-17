@@ -80,7 +80,7 @@ const ContactMap = () => {
                       href="tel:3416039872"
                       className="text-white hover:text-primary-500 transition-colors"
                     >
-                      +54 9 3816 123456
+                      +54 9 3416 039872
                     </a>
                   </div>
                 </div>
