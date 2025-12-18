@@ -72,7 +72,7 @@ const ProductGrid = ({ category, title, icon: Icon, products }) => {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto"
         >
-          {products.slice(0, 4).map((product, index) => (
+          {products.map((product) => (
             <motion.div
               key={product.id}
               variants={item}
@@ -163,36 +163,51 @@ const ProductGrid = ({ category, title, icon: Icon, products }) => {
 export const CocinasIndustriales = () => {
   const products = [
     {
-      id: 'cocina-4h',
-      name: 'Cocina Semi-Industrial 4 Hornallas',
-      description: 'Cocina semi-industrial con 4 hornallas. Estructura de hierro, rejas de fundición de aluminio con pirómetros medidor de temperatura, quemadores enlozados.',
-      features: ['4 Hornallas', 'Pirómetro', 'Gas Envasado'],
-      image: '/images/productos/cocinas/cocina-1.jpg',
+      id: 'cocina-2h',
+      name: 'Cocina 2 Hornallas',
+      description: 'Cocina compacta ideal para espacios reducidos. Perfecta para departamentos, food trucks o negocios gastronómicos pequeños. 2 hornallas de alto rendimiento y horno.',
+      features: ['2 Hornallas', 'Horno 35L', 'Compacta'],
+      image: '/images/cocina2hornallas.jpeg',
       badge: 'DESTACADO'
     },
     {
-      id: 'cocina-mini',
+      id: 'cocina-multiple-mini',
       name: 'Cocina Múltiple Mini',
-      description: 'Cocina compacta multi-función. Estructura de hierro reforzada, rejas de fundición de aluminio, quemadores enlozados. Ideal para espacios reducidos.',
-      features: ['Compacta', 'Multi-función', 'Alta Calidad'],
-      image: '/images/productos/cocinas/cocina-2.jpg',
+      description: 'Cocina multifuncional compacta que maximiza el espacio. Combina 2 hornallas, plancha, tostadora y horno. Perfecta para food trucks y espacios limitados.',
+      features: ['2 Hornallas', 'Plancha', 'Tostadora', 'Horno'],
+      image: '/images/cocina-multiple-mini.jpeg',
     },
     {
-      id: 'cocina-grande',
-      name: 'Cocina Múltiple Grande',
-      description: 'Cocina semi-industrial de alto rendimiento. 6 hornallas con pirómetros, rejas de fundición de aluminio, estructura robusta de hierro.',
-      features: ['6 Hornallas', 'Plancha Incluida', 'Profesional'],
-      image: '/images/productos/cocinas/cocina-3.jpg',
+      id: 'cocina-multifuncion',
+      name: 'Cocina Multifunción mini',
+      description: 'La cocina más completa. 2 hornallas, plancha, tostadora, freidora integrada y horno de gran capacidad. Para negocios gastronómicos exigentes.',
+      features: ['2 Hornallas', 'Freidora 8L', 'Plancha', 'Horno'],
+      image: '/images/cocina_multifuncion_mini.jpeg',
       badge: 'NUEVO'
     },
     {
-      id: 'cocina-freidora',
-      name: 'Cocina con Freidora',
-      description: 'Cocina semi-industrial con freidora incorporada. Estructura de hierro, rejas de fundición de aluminio, quemadores enlozados de alta durabilidad.',
-      features: ['Freidora', '4 Hornallas', 'Versátil'],
-      image: '/images/productos/cocinas/cocina-4.jpg',
-      badge: 'OFERTA'
+      id: 'cocina-multifuncion-grande',
+      name: 'Cocina Multifunción ',
+      description: 'La cocina más completa. 4 hornallas, plancha, tostadora, freidora integrada y horno de gran capacidad. Para negocios gastronómicos exigentes.',
+      features: ['4 Hornallas', 'Freidora 8L', 'Plancha','Horno'],
+      image: '/images/cocina-multifuncion.jpeg',
+      badge: 'NUEVO'
     },
+    {
+      id: 'cocina-4h',
+      name: 'Cocina 4 Hornallas',
+      description: 'Cocina profesional clásica con 4 hornallas potentes y horno de gran capacidad. Ideal para restaurantes, hoteles y comedores industriales.',
+      features: ['4 Hornallas', 'Horno 50L', 'Profesional'],
+      image: '/images/cocina4hornallas.jpeg',
+    },
+    {
+      id: 'cocina-multiple-grande',
+      name: 'Cocina Múltiple Grande',
+      description: 'Cocina industrial de máxima capacidad. 6 hornallas potentes, plancha profesional, tostadora y horno de gran volumen. Para alto volumen de producción.',
+      features: ['6 Hornallas', 'Plancha 50cm', 'Industrial', 'Horno'],
+      image: '/images/cocinamultiplegrande.jpeg',
+      badge: 'PREMIUM'
+    }
   ];
 
   return (
@@ -208,27 +223,27 @@ export const CocinasIndustriales = () => {
 export const EquiposFrio = () => {
   const products = [
     {
-      id: 'aire-3000',
-      name: 'Aire Acondicionado 3000 Frigorías',
-      description: 'Equipo split de 3000 frigorías con kit de instalación incluido. Ideal para ambientes de hasta 30m². Frío/Calor.',
-      features: ['3000 Fg', 'Kit Instalación', 'Frío/Calor'],
-      image: '/images/productos/frio/aire-1.jpg',
+      id: 'hisense-3000',
+      name: 'Hisense 3000 fg',
+      description: 'Aire acondicionado Split Hisense 3000 frigorías con tecnología Inverter. Eficiencia clase A, bajo consumo. Ideal para hasta 25m².',
+      features: ['3000 Fg', 'Inverter', 'Hasta 25m²'],
+      image: '/images/aire3000fg.jpeg',
       badge: 'DESTACADO'
     },
     {
-      id: 'aire-4500',
-      name: 'Aire Acondicionado 4500 Frigorías',
-      description: 'Equipo split de 4500 frigorías con kit de instalación completo incluido. Perfecto para ambientes medianos de hasta 45m². Frío/Calor.',
-      features: ['4500 Fg', 'Kit Instalación', 'Eficiente'],
-      image: '/images/productos/frio/aire-2.jpg',
+      id: 'meling-4500',
+      name: 'Meling 4500 fg',
+      description: 'Aire acondicionado Split Meling 4500 frigorías con Inverter Plus. Incluye WiFi, control por app y modo turbo. Cobertura hasta 40m².',
+      features: ['4500 Fg', 'WiFi', 'Hasta 40m²'],
+      image: '/images/aire4500fg.jpeg',
     },
     {
-      id: 'aire-6000',
-      name: 'Aire Acondicionado 6000 Frigorías',
-      description: 'Equipo split de 6000 frigorías con kit de instalación incluido. Ideal para ambientes grandes de hasta 60m². Máxima potencia.',
-      features: ['6000 Fg', 'Kit Instalación', 'Alta Potencia'],
-      image: '/images/productos/frio/aire-3.jpg',
-      badge: 'NUEVO'
+      id: 'meling-6000',
+      name: 'Meling 6000 fg',
+      description: 'Aire acondicionado Split Meling 6000 frigorías, el más potente. Inverter Premium con control por voz. Ambientes hasta 60m².',
+      features: ['6000 Fg', 'Control Voz', 'Hasta 60m²'],
+      image: '/images/aire6000fg.jpeg',
+      badge: 'PREMIUM'
     },
   ];
 

@@ -8,218 +8,249 @@ const ProductDetail = () => {
   const navigate = useNavigate();
   const [selectedImage, setSelectedImage] = useState(0);
 
-  // Base de datos completa de productos
+  // Base de datos completa de productos ACTUALIZADOS
   const productsData = {
-    // COCINAS
-    'cocina-4h': {
-      id: 'cocina-4h',
-      name: 'Cocina Semi-Industrial 4 Hornallas',
+    // ==================== COCINAS ====================
+    'cocina-2h': {
+      id: 'cocina-2h',
+      name: 'Cocina 2 Hornallas',
       category: 'Cocinas Semi-Industriales',
-      description: 'Cocina semi-industrial de alta calidad con 4 hornallas. Estructura de hierro reforzada, rejas de fundición de aluminio con pirómetros medidor de temperatura integrados, y quemadores enlozados de larga duración. Diseñada para funcionar con gas envasado.',
+      description: 'Cocina compacta ideal para espacios reducidos. Perfecta para departamentos, food trucks o negocios gastronómicos pequeños. Incluye 2 hornallas de alto rendimiento y horno con termostato regulable.',
       images: [
-        '/images/productos/cocinas/cocina-1.jpg',
-        '/images/productos/cocinas/cocina-1.jpg',
-        '/images/productos/cocinas/cocina-1.jpg',
-        '/images/productos/cocinas/cocina-1.jpg',
+        '/images/cocina2hornallas.jpeg',
+        '/images/cocina2hornallas.jpeg',
+        '/images/cocina2hornallas.jpeg',
+        '/images/cocina2hornallas.jpeg',
       ],
       specifications: [
-        { label: 'Dimensiones', value: '55 x 55 x 85 cm' },
-        { label: 'Material Estructura', value: 'Hierro Reforzado' },
-        { label: 'Rejas', value: 'Fundición de Aluminio' },
-        { label: 'Hornallas', value: '4 Quemadores Enlozados' },
-        { label: 'Pirómetro', value: 'Medidor de Temperatura' },
-        { label: 'Tipo de Gas', value: 'Gas Envasado' },
-        { label: 'Garantía', value: '6 meses' },
-        { label: 'Instalación', value: 'Consultar' },
+        { label: 'Dimensiones', value: '60cm x 85cm x 60cm' },
+        { label: 'Material', value: 'Acero inoxidable 430' },
+        { label: 'Hornallas', value: '2 quemadores semi-industriales' },
+        { label: 'Horno', value: 'Capacidad 35 litros con termostato' },
+        { label: 'Tipo de Gas', value: 'Natural o envasado (adaptable)' },
+        { label: 'Encendido', value: 'Piezoeléctrico' },
+        { label: 'Garantía', value: '12 meses' },
+        { label: 'Origen', value: '100% Argentino' },
       ],
       features: [
-        'Estructura de hierro reforzada',
-        'Rejas de fundición de aluminio',
-        'Pirómetros medidor de temperatura',
-        'Quemadores enlozados durables',
-        'Para gas envasado',
-        'Medida estándar 55x55x85cm'
+        '2 quemadores de alta potencia',
+        'Horno con visor de vidrio templado',
+        'Perillas cromadas anti-calor',
+        'Base reforzada con patas regulables',
+        'Estructura en acero inoxidable',
+        'Ideal para espacios compactos'
       ]
     },
-    'cocina-mini': {
-      id: 'cocina-mini',
+    'cocina-multiple-mini': {
+      id: 'cocina-multiple-mini',
       name: 'Cocina Múltiple Mini',
       category: 'Cocinas Semi-Industriales',
-      description: 'Cocina compacta multi-función ideal para espacios reducidos. Estructura de hierro reforzada, rejas de fundición de aluminio, quemadores enlozados. Perfecta para food trucks y negocios pequeños.',
+      description: 'Cocina multifuncional compacta que maximiza el espacio. Combina 2 hornallas, plancha, tostadora y horno en un diseño inteligente. Perfecta para food trucks, stands gastronómicos o cocinas con espacio limitado.',
       images: [
-        '/images/productos/cocinas/cocina-2.jpg',
-        '/images/productos/cocinas/cocina-2.jpg',
-        '/images/productos/cocinas/cocina-2.jpg',
-        '/images/productos/cocinas/cocina-2.jpg',
+        '/images/cocina-multiple-mini.jpeg',
+        '/images/cocina-multiple-mini.jpeg',
+        '/images/cocina-multiple-mini.jpeg',
+        '/images/cocina-multiple-mini.jpeg',
       ],
       specifications: [
-        { label: 'Tipo', value: 'Compacta Multi-función' },
-        { label: 'Material Estructura', value: 'Hierro Reforzado' },
-        { label: 'Rejas', value: 'Fundición de Aluminio' },
-        { label: 'Quemadores', value: 'Enlozados Alta Calidad' },
-        { label: 'Tipo de Gas', value: 'Gas Envasado' },
-        { label: 'Ideal para', value: 'Food Trucks' },
-        { label: 'Garantía', value: '6 meses' },
-        { label: 'Instalación', value: 'Consultar' },
+        { label: 'Dimensiones', value: '70cm x 85cm x 60cm' },
+        { label: 'Material', value: 'Acero inoxidable 430' },
+        { label: 'Hornallas', value: '2 quemadores industriales' },
+        { label: 'Plancha', value: '30cm x 30cm anti-adherente' },
+        { label: 'Tostadora', value: 'Parrilla superior rebatible' },
+        { label: 'Horno', value: '40 litros con termostato' },
+        { label: 'Garantía', value: '12 meses' },
+        { label: 'Origen', value: '100% Argentino' },
       ],
       features: [
-        'Diseño compacto',
-        'Multi-función versátil',
-        'Estructura reforzada',
-        'Quemadores enlozados',
-        'Fácil transporte',
-        'Para espacios reducidos'
+        'Diseño multifuncional 4 en 1',
+        'Plancha de acero cromado',
+        'Tostadora con parrilla rebatible',
+        'Horno espacioso de 40 litros',
+        'Quemadores de alto rendimiento',
+        'Máxima eficiencia en espacio reducido'
       ]
     },
-    'cocina-grande': {
-      id: 'cocina-grande',
+    'cocina-multifuncion': {
+      id: 'cocina-multifuncion',
+      name: 'Cocina Multifunción',
+      category: 'Cocinas Semi-Industriales',
+      description: 'La cocina más completa de nuestra línea. Equipada con 4 hornallas, plancha, tostadora, freidora integrada y horno de gran capacidad. Diseñada para negocios gastronómicos exigentes que requieren máxima versatilidad y producción.',
+      images: [
+        '/images/cocina_multifuncion_mini.jpeg',
+        '/images/cocina-multifuncion.jpeg',
+        '/images/cocina_multifuncion_mini.jpeg',
+        '/images/cocina-multifuncion.jpeg',
+      ],
+      specifications: [
+        { label: 'Dimensiones', value: '100cm x 90cm x 65cm' },
+        { label: 'Material', value: 'Acero inoxidable 304' },
+        { label: 'Hornallas', value: '4 quemadores industriales' },
+        { label: 'Plancha', value: '40cm x 35cm anti-adherente' },
+        { label: 'Freidora', value: '8 litros con termostato' },
+        { label: 'Horno', value: '60 litros con convección' },
+        { label: 'Garantía', value: '18 meses' },
+        { label: 'Origen', value: '100% Argentino' },
+      ],
+      features: [
+        '6 funciones en un solo equipo',
+        'Freidora con sistema de filtrado',
+        'Plancha de gran superficie',
+        '4 hornallas de máxima potencia',
+        'Horno con sistema de convección',
+        'Ideal para restaurantes y fast food'
+      ]
+    },
+    'cocina-4h': {
+      id: 'cocina-4h',
+      name: 'Cocina 4 Hornallas',
+      category: 'Cocinas Semi-Industriales',
+      description: 'Cocina profesional clásica con 4 hornallas potentes y horno de gran capacidad. El equilibrio perfecto entre funcionalidad y espacio. Ideal para restaurantes, hoteles y comedores industriales que priorizan la cocción tradicional.',
+      images: [
+        '/images/cocina4hornallas.jpeg',
+        '/images/cocina4hornallas2.jpeg',
+        '/images/cocina4hornallas.jpeg',
+        '/images/cocina4hornallas2.jpeg',
+      ],
+      specifications: [
+        { label: 'Dimensiones', value: '85cm x 85cm x 60cm' },
+        { label: 'Material', value: 'Acero inoxidable 430' },
+        { label: 'Hornallas', value: '4 quemadores industriales' },
+        { label: 'Potencia', value: '3500W por quemador' },
+        { label: 'Horno', value: '50 litros con termostato' },
+        { label: 'Tipo de Gas', value: 'Natural o envasado' },
+        { label: 'Garantía', value: '12 meses' },
+        { label: 'Origen', value: '100% Argentino' },
+      ],
+      features: [
+        '4 quemadores de alto rendimiento',
+        'Horno con puerta reforzada',
+        'Parrillas de hierro fundido',
+        'Sistema de seguridad por termopar',
+        'Bandeja recolectora extraíble',
+        'Diseño robusto para uso intensivo'
+      ]
+    },
+    'cocina-multiple-grande': {
+      id: 'cocina-multiple-grande',
       name: 'Cocina Múltiple Grande',
       category: 'Cocinas Semi-Industriales',
-      description: 'Cocina semi-industrial de alto rendimiento con 6 hornallas y plancha integrada. Estructura robusta de hierro, rejas de fundición de aluminio, pirómetros para control preciso de temperatura.',
+      description: 'Cocina industrial de máxima capacidad. Combina 6 hornallas potentes, plancha profesional, tostadora y horno de gran volumen. La solución definitiva para restaurantes de alto volumen, hoteles y catering profesional.',
       images: [
-        '/images/productos/cocinas/cocina-3.jpg',
-        '/images/productos/cocinas/cocina-3.jpg',
-        '/images/productos/cocinas/cocina-3.jpg',
-        '/images/productos/cocinas/cocina-3.jpg',
+        '/images/cocinamultiplegrande.jpeg',
+        '/images/cocinamultiplegrande2.jpeg',
+        '/images/cocinamultiplegrande.jpeg',
+        '/images/cocinamultiplegrande2.jpeg',
       ],
       specifications: [
-        { label: 'Hornallas', value: '6 Quemadores' },
-        { label: 'Plancha', value: 'Incluida' },
-        { label: 'Material Estructura', value: 'Hierro Reforzado' },
-        { label: 'Rejas', value: 'Fundición de Aluminio' },
-        { label: 'Pirómetro', value: 'Sí, integrado' },
-        { label: 'Tipo de Gas', value: 'Gas Envasado' },
-        { label: 'Garantía', value: '6 meses' },
-        { label: 'Uso', value: 'Profesional' },
+        { label: 'Dimensiones', value: '120cm x 95cm x 70cm' },
+        { label: 'Material', value: 'Acero inoxidable 304 reforzado' },
+        { label: 'Hornallas', value: '6 quemadores industriales' },
+        { label: 'Plancha', value: '50cm x 40cm profesional' },
+        { label: 'Tostadora', value: 'Parrilla doble superior' },
+        { label: 'Horno', value: '80 litros con termómetro' },
+        { label: 'Garantía', value: '24 meses' },
+        { label: 'Origen', value: '100% Argentino' },
       ],
       features: [
-        '6 hornallas de alto rendimiento',
-        'Plancha integrada',
-        'Pirómetros de temperatura',
-        'Estructura robusta',
-        'Ideal para restaurantes',
-        'Uso intensivo profesional'
+        '6 hornallas de máxima potencia',
+        'Plancha profesional de gran superficie',
+        'Horno de 80 litros con termómetro',
+        'Estructura reforzada extra resistente',
+        'Quemadores con doble corona',
+        'Diseñada para producción intensiva'
       ]
     },
-    'cocina-freidora': {
-      id: 'cocina-freidora',
-      name: 'Cocina con Freidora',
-      category: 'Cocinas Semi-Industriales',
-      description: 'Cocina semi-industrial versátil con freidora incorporada. Estructura de hierro, rejas de fundición de aluminio, 4 hornallas más freidora lateral. Ideal para negocios gastronómicos.',
-      images: [
-        '/images/productos/cocinas/cocina-4.jpg',
-        '/images/productos/cocinas/cocina-4.jpg',
-        '/images/productos/cocinas/cocina-4.jpg',
-        '/images/productos/cocinas/cocina-4.jpg',
-      ],
-      specifications: [
-        { label: 'Hornallas', value: '4 Quemadores' },
-        { label: 'Freidora', value: 'Incorporada' },
-        { label: 'Material Estructura', value: 'Hierro' },
-        { label: 'Rejas', value: 'Fundición de Aluminio' },
-        { label: 'Quemadores', value: 'Enlozados' },
-        { label: 'Tipo de Gas', value: 'Gas Envasado' },
-        { label: 'Garantía', value: '6 meses' },
-        { label: 'Ideal para', value: 'Gastronomía' },
-      ],
-      features: [
-        'Freidora incorporada',
-        '4 hornallas enlozadas',
-        'Estructura de hierro',
-        'Rejas de aluminio',
-        'Versátil y práctica',
-        'Para negocios gastronómicos'
-      ]
-    },
-    // AIRES ACONDICIONADOS
-    'aire-3000': {
-      id: 'aire-3000',
-      name: 'Aire Acondicionado 3000 Frigorías',
+
+    // ==================== AIRES ACONDICIONADOS ====================
+    'hisense-3000': {
+      id: 'hisense-3000',
+      name: 'Hisense 3000 fg',
       category: 'Aires Acondicionados',
-      description: 'Equipo split de 3000 frigorías con kit de instalación completo incluido. Marca Hisense, frío/calor, ideal para ambientes de hasta 30m². Alta eficiencia energética.',
+      description: 'Aire acondicionado Split Hisense de 3000 frigorías con tecnología Inverter. Eficiencia energética clase A, bajo consumo y funcionamiento silencioso. Ideal para ambientes de hasta 25m². Incluye control remoto, modo sleep y filtro lavable.',
       images: [
-        '/images/productos/frio/aire-1.jpg',
-        '/images/productos/frio/aire-1.jpg',
-        '/images/productos/frio/aire-1.jpg',
-        '/images/productos/frio/aire-1.jpg',
+        '/images/aire3000fg.jpeg',
+        '/images/aire3000fg1.jpeg',
+        '/images/aire3000fg2.jpeg',
+        '/images/aire3000fg.jpeg',
       ],
       specifications: [
-        { label: 'Capacidad', value: '3000 Frigorías' },
-        { label: 'Marca', value: 'Hisense' },
-        { label: 'Tipo', value: 'Split Frío/Calor' },
-        { label: 'Kit Instalación', value: 'Incluido' },
-        { label: 'Cobertura', value: 'Hasta 30m²' },
+        { label: 'Capacidad', value: '3000 frigorías (2600W)' },
+        { label: 'Tecnología', value: 'Inverter' },
+        { label: 'Voltaje', value: '220V 50Hz' },
         { label: 'Eficiencia', value: 'Clase A' },
-        { label: 'Garantía', value: '6 meses' },
-        { label: 'Instalación', value: 'Incluida' },
+        { label: 'Área Cubierta', value: 'Hasta 25m²' },
+        { label: 'Funciones', value: 'Frío / Calor' },
+        { label: 'Garantía', value: '12 meses' },
+        { label: 'Gas Refrigerante', value: 'R410A ecológico' },
       ],
       features: [
-        'Kit de instalación completo',
-        'Frío y Calor',
-        'Alta eficiencia energética',
-        'Bajo consumo',
-        'Control remoto',
-        'Instalación profesional incluida'
+        'Tecnología Inverter ahorro energético',
+        'Modo Sleep programable',
+        'Filtro lavable purificador',
+        'Control remoto inteligente',
+        'Función deshumidificador',
+        'Bajo nivel de ruido (32dB)'
       ]
     },
-    'aire-4500': {
-      id: 'aire-4500',
-      name: 'Aire Acondicionado 4500 Frigorías',
+    'meling-4500': {
+      id: 'meling-4500',
+      name: 'Meling 4500 fg',
       category: 'Aires Acondicionados',
-      description: 'Equipo split de 4500 frigorías con kit de instalación completo. Marca Meling, frío/calor, perfecto para ambientes medianos de hasta 45m². Eficiente y silencioso.',
+      description: 'Aire acondicionado Split Meling de 4500 frigorías con tecnología Inverter de última generación. Eficiencia energética superior, cobertura para ambientes medianos hasta 40m². Incluye WiFi integrado, control por app y modo turbo cooling.',
       images: [
-        '/images/productos/frio/aire-2.jpg',
-        '/images/productos/frio/aire-2.jpg',
-        '/images/productos/frio/aire-2.jpg',
-        '/images/productos/frio/aire-2.jpg',
+        '/images/aire4500fg.jpeg',
+        '/images/aire4500fg.jpeg',
+        '/images/aire4500fg.jpeg',
+        '/images/aire4500fg.jpeg',
       ],
       specifications: [
-        { label: 'Capacidad', value: '4500 Frigorías' },
-        { label: 'Marca', value: 'Meling' },
-        { label: 'Tipo', value: 'Split Frío/Calor' },
-        { label: 'Kit Instalación', value: 'Incluido' },
-        { label: 'Cobertura', value: 'Hasta 45m²' },
+        { label: 'Capacidad', value: '4500 frigorías (3900W)' },
+        { label: 'Tecnología', value: 'Inverter Plus' },
+        { label: 'Voltaje', value: '220V 50Hz' },
         { label: 'Eficiencia', value: 'Clase A+' },
-        { label: 'Garantía', value: '6 meses' },
-        { label: 'Ruido', value: 'Bajo nivel' },
+        { label: 'Área Cubierta', value: 'Hasta 40m²' },
+        { label: 'Conectividad', value: 'WiFi + Control remoto' },
+        { label: 'Garantía', value: '18 meses' },
+        { label: 'Gas Refrigerante', value: 'R32 ecológico' },
       ],
       features: [
-        'Kit de instalación incluido',
-        'Potencia para ambientes medianos',
-        'Funcionamiento silencioso',
-        'Frío y Calor',
-        'Eficiencia energética',
-        
+        'Control WiFi por smartphone',
+        'Modo Turbo para enfriamiento rápido',
+        'Deshumidificador de 2 litros/hora',
+        'Ventilador 3 velocidades',
+        'Display LED temperatura',
+        'Sistema de auto-limpieza'
       ]
     },
-    'aire-6000': {
-      id: 'aire-6000',
-      name: 'Aire Acondicionado 6000 Frigorías',
+    'meling-6000': {
+      id: 'meling-6000',
+      name: 'Meling 6000 fg',
       category: 'Aires Acondicionados',
-      description: 'Equipo split de 6000 frigorías con kit de instalación incluido. Marca Meling, frío/calor, ideal para ambientes grandes de hasta 60m². Máxima potencia y rendimiento.',
+      description: 'Aire acondicionado Split Meling de 6000 frigorías, el más potente de nuestra línea. Tecnología Inverter Premium con WiFi dual band. Diseñado para ambientes grandes hasta 60m². Incluye todas las funciones smart: control por voz, modo ECO y filtro HEPA.',
       images: [
-        '/images/productos/frio/aire-3.jpg',
-        '/images/productos/frio/aire-3.jpg',
-        '/images/productos/frio/aire-3.jpg',
-        '/images/productos/frio/aire-3.jpg',
+        '/images/aire6000fg.jpeg',
+        '/images/aire6000fg.jpeg',
+        '/images/aire6000fg.jpeg',
+        '/images/aire6000fg.jpeg',
       ],
       specifications: [
-        { label: 'Capacidad', value: '6000 Frigorías' },
-        { label: 'Marca', value: 'Meling' },
-        { label: 'Tipo', value: 'Split Frío/Calor' },
-        { label: 'Kit Instalación', value: 'Incluido' },
-        { label: 'Cobertura', value: 'Hasta 60m²' },
+        { label: 'Capacidad', value: '6000 frigorías (5200W)' },
+        { label: 'Tecnología', value: 'Inverter Premium' },
+        { label: 'Voltaje', value: '220V 50Hz' },
         { label: 'Eficiencia', value: 'Clase A++' },
-        { label: 'Garantía', value: '6 meses' },
-        { label: 'Potencia', value: 'Alta' },
+        { label: 'Área Cubierta', value: 'Hasta 60m²' },
+        { label: 'Conectividad', value: 'WiFi Dual + Alexa/Google' },
+        { label: 'Garantía', value: '24 meses' },
+        { label: 'Gas Refrigerante', value: 'R32 última generación' },
       ],
       features: [
-        'Máxima potencia 6000 fg',
-        'Kit de instalación completo',
-        'Para ambientes grandes',
-        'Alta eficiencia A++',
-        'Frío y Calor',
-        'Garantía extendida'
+        'Control por voz (Alexa/Google Home)',
+        'Filtro HEPA purificador de aire',
+        'Modo ECO inteligente',
+        'Pantalla digital LED',
+        'Función auto-limpieza Premium',
+        'Cobertura para ambientes grandes'
       ]
     },
   };
@@ -231,18 +262,18 @@ const ProductDetail = () => {
     category: '',
     description: 'El producto que buscas no existe.',
     images: [
-      '/images/productos/cocinas/cocina-1.jpg',
-      '/images/productos/cocinas/cocina-1.jpg',
-      '/images/productos/cocinas/cocina-1.jpg',
-      '/images/productos/cocinas/cocina-1.jpg',
+      '/images/cocina2hornallas.jpeg',
+      '/images/cocina2hornallas.jpeg',
+      '/images/cocina2hornallas.jpeg',
+      '/images/cocina2hornallas.jpeg',
     ],
     specifications: [],
     features: []
   };
 
   const handleWhatsAppClick = () => {
-    const phone = '5493416039872'; 
-    const message = encodeURIComponent(`Hola Cesar Cocinas! Me interesa mas informacion sobre el producto: ${product.name}`);
+    const phone = '5493416039872'; // Número real de César Cocinas
+    const message = encodeURIComponent(`Hola! Me interesa el producto: ${product.name}`);
     window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
   };
 
@@ -345,11 +376,11 @@ const ProductDetail = () => {
               </div>
               <div className="text-center">
                 <Shield className="w-8 h-8 text-primary-500 mx-auto mb-2" />
-                <p className="text-sm text-gray-400">Garantía 6 meses</p>
+                <p className="text-sm text-gray-400">Garantía</p>
               </div>
               <div className="text-center">
                 <Zap className="w-8 h-8 text-primary-500 mx-auto mb-2" />
-                <p className="text-sm text-gray-400">Instalación</p>
+                <p className="text-sm text-gray-400">100% Argentino</p>
               </div>
             </div>
 
