@@ -29,7 +29,7 @@ const ProductDetail = () => {
         { label: 'Horno', value: 'Capacidad 35 litros con termostato' },
         { label: 'Tipo de Gas', value: 'Natural o envasado (adaptable)' },
         { label: 'Encendido', value: 'Piezoeléctrico' },
-        { label: 'Garantía', value: '12 meses' },
+        { label: 'Garantía', value: '6 meses' },
         { label: 'Origen', value: '100% Argentino' },
       ],
       features: [
@@ -59,7 +59,7 @@ const ProductDetail = () => {
         { label: 'Plancha', value: '30cm x 30cm anti-adherente' },
         { label: 'Tostadora', value: 'Parrilla superior rebatible' },
         { label: 'Horno', value: '40 litros con termostato' },
-        { label: 'Garantía', value: '12 meses' },
+        { label: 'Garantía', value: '6 meses' },
         { label: 'Origen', value: '100% Argentino' },
       ],
       features: [
@@ -89,7 +89,7 @@ const ProductDetail = () => {
         { label: 'Plancha', value: '40cm x 35cm anti-adherente' },
         { label: 'Freidora', value: '8 litros con termostato' },
         { label: 'Horno', value: '60 litros con convección' },
-        { label: 'Garantía', value: '18 meses' },
+        { label: 'Garantía', value: '6 meses' },
         { label: 'Origen', value: '100% Argentino' },
       ],
       features: [
@@ -119,7 +119,7 @@ const ProductDetail = () => {
         { label: 'Potencia', value: '3500W por quemador' },
         { label: 'Horno', value: '50 litros con termostato' },
         { label: 'Tipo de Gas', value: 'Natural o envasado' },
-        { label: 'Garantía', value: '12 meses' },
+        { label: 'Garantía', value: '6 meses' },
         { label: 'Origen', value: '100% Argentino' },
       ],
       features: [
@@ -149,7 +149,7 @@ const ProductDetail = () => {
         { label: 'Plancha', value: '50cm x 40cm profesional' },
         { label: 'Tostadora', value: 'Parrilla doble superior' },
         { label: 'Horno', value: '80 litros con termómetro' },
-        { label: 'Garantía', value: '24 meses' },
+        { label: 'Garantía', value: '6 meses' },
         { label: 'Origen', value: '100% Argentino' },
       ],
       features: [
@@ -181,7 +181,7 @@ const ProductDetail = () => {
         { label: 'Eficiencia', value: 'Clase A' },
         { label: 'Área Cubierta', value: 'Hasta 25m²' },
         { label: 'Funciones', value: 'Frío / Calor' },
-        { label: 'Garantía', value: '12 meses' },
+        { label: 'Garantía', value: '6 meses' },
         { label: 'Gas Refrigerante', value: 'R410A ecológico' },
       ],
       features: [
@@ -211,7 +211,7 @@ const ProductDetail = () => {
         { label: 'Eficiencia', value: 'Clase A+' },
         { label: 'Área Cubierta', value: 'Hasta 40m²' },
         { label: 'Conectividad', value: 'WiFi + Control remoto' },
-        { label: 'Garantía', value: '18 meses' },
+        { label: 'Garantía', value: '6 meses' },
         { label: 'Gas Refrigerante', value: 'R32 ecológico' },
       ],
       features: [
@@ -241,7 +241,7 @@ const ProductDetail = () => {
         { label: 'Eficiencia', value: 'Clase A++' },
         { label: 'Área Cubierta', value: 'Hasta 60m²' },
         { label: 'Conectividad', value: 'WiFi Dual + Alexa/Google' },
-        { label: 'Garantía', value: '24 meses' },
+        { label: 'Garantía', value: '6 meses' },
         { label: 'Gas Refrigerante', value: 'R32 última generación' },
       ],
       features: [
