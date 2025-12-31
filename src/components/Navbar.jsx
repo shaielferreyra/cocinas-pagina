@@ -83,7 +83,7 @@ const Navbar = () => {
                     </span>
                     <span className="text-white ml-1">Cocina</span>
                   </h1>
-                  <p className="text-xs text-gray-400 font-medium">Equipamiento Profesional</p>
+                  <p className="text-xs text-gray-400 font-medium">Equipamiento Comercial</p>
                 </div>
               </motion.div>
             </Link>
