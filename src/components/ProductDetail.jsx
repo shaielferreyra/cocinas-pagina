@@ -105,7 +105,7 @@ const ProductDetail = () => {
       id: 'cocina-4h',
       name: 'Cocina 4 Hornallas',
       category: 'Cocinas Semi-Industriales',
-      description: 'Cocina profesional clásica con 4 hornallas potentes y horno de gran capacidad. El equilibrio perfecto entre funcionalidad y espacio. Ideal para restaurantes, hoteles y comedores industriales que priorizan la cocción tradicional.',
+      description: 'Cocina clásica con 4 hornallas potentes y horno de gran capacidad. El equilibrio perfecto entre funcionalidad y espacio. Ideal para restaurantes, hoteles y comedores industriales que priorizan la cocción tradicional.',
       images: [
         '/images/cocina4hornallas.jpeg',
         '/images/cocina4hornallas2.jpeg',
@@ -135,7 +135,7 @@ const ProductDetail = () => {
       id: 'cocina-multiple-grande',
       name: 'Cocina Múltiple Grande',
       category: 'Cocinas Semi-Industriales',
-      description: 'Cocina industrial de máxima capacidad. Combina 6 hornallas potentes, plancha profesional, tostadora y horno de gran volumen. La solución definitiva para restaurantes de alto volumen, hoteles y catering profesional.',
+      description: 'Cocina semi-industrial de máxima capacidad. Combina 6 hornallas potentes, plancha profesional, tostadora y horno de gran volumen. La solución definitiva para restaurantes de alto volumen, hoteles y catering profesional.',
       images: [
         '/images/cocinamultiplegrande.jpeg',
         '/images/cocinamultiplegrande2.jpeg',
