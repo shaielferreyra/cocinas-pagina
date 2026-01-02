@@ -71,7 +71,7 @@ const ProductDetail = () => {
         'Máxima eficiencia en espacio reducido'
       ]
     },
-    'cocina-multifuncion': {
+    'cocina-multifuncion-grande': {
       id: 'cocina-multifuncion-grande',
       name: 'Cocina Multifunción',
       category: 'Cocinas Semi-Industriales',
