@@ -72,7 +72,7 @@ const ProductDetail = () => {
       ]
     },
     'cocina-multifuncion': {
-      id: 'cocina-multifuncion',
+      id: 'cocina-multifuncion-grande',
       name: 'Cocina Multifunción',
       category: 'Cocinas Semi-Industriales',
       description: 'La cocina más completa de nuestra línea. Equipada con 4 hornallas, plancha, tostadora, freidora integrada y horno de gran capacidad. Diseñada para negocios gastronómicos exigentes que requieren máxima versatilidad y producción.',
